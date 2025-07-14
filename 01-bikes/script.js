@@ -11,8 +11,10 @@ const bikes = [
 let lightest = bikes[0];
 // Ciclo tutto l'array a partire dal secondo elemento
 for (let i = 1; i < bikes.length; i++) {
-  // Se trovo una bici con peso minore, la salvo in lightest
+  // Se trovo una bici con peso minore la salvo in lightest
   if (bikes[i].peso < lightest.peso) {
     lightest = bikes[i];
   }
 }
+// Stampa
+console.log('La bici più leggera è:', lightest);
