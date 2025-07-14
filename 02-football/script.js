@@ -13,3 +13,11 @@ for (let i = 0; i < teams.length; i++) {
   // foulsReceived: da 0 a 50
   teams[i].foulsReceived = Math.floor(Math.random() * 51); 
 }
+// Creo un nuovo array contenente solo 'name' e 'foulsReceived'
+const foulsOnly = [];
+for (let i = 0; i < teams.length; i++) {
+  foulsOnly.push({
+    name: teams[i].name,
+    foulsReceived: teams[i].foulsReceived
+  });
+}
