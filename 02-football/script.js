@@ -21,3 +21,6 @@ for (let i = 0; i < teams.length; i++) {
     foulsReceived: teams[i].foulsReceived
   });
 }
+// 4. Stampa
+console.log('Full teams with random stats:', teams);
+console.log('Only name and fouls received:', foulsOnly);
